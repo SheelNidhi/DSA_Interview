@@ -15,6 +15,8 @@ public class MinimumOperation {
               x= x-nums[low];
               low++;
               count++;
+
+
             }
             if(x <=0){
                 return count;
