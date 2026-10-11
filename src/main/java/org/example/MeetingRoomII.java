@@ -6,7 +6,8 @@ import java.util.PriorityQueue;
 
 public class MeetingRoomII {
     public int minMeetingRooms(List<Interval> intervals) {
-        Collections.sort(intervals, (a,b) -> Integer.compare((a.start),(b.start)));
+
+        Collections.sort(intervals,(a,b) ->Integer.compare(a.start, b.start));
         PriorityQueue<Integer> minHeap = new PriorityQueue<>();
         minHeap.add(intervals.get(0).end);
         for(int i = 1; i< intervals.size() ;i++){
